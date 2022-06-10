@@ -1,0 +1,21 @@
+body {
+    text-align: center;
+    background-color: #fffbf7;
+}
+
+h1 {
+    color: #025157;
+}
+
+p {
+    color: #8b8b8bcc;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+}
+
+button {
+    color: #fff;
+    background-color: #025157;
+    border: none;
+}
+
