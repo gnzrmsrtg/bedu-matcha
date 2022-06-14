@@ -1,6 +1,11 @@
 body {
     text-align: center;
     background-color: #fffbf7;
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
 }
 
 h1 {
@@ -8,11 +13,12 @@ h1 {
     font-family: "Alegreya", serif;
     font-size: 60px;
     margin-bottom: 24px;
+    font-weight: 900;
 }
 
 h4 {
     color: #46484c;
-    font-family: "Slabo, 27px", serif;
+    font-family: "Slabo", serif;
     font-size: 20px;
 }
 
@@ -30,19 +36,20 @@ form {
 }
 
 input, button {
-    padding: 6px, 20px;
     max-width: 250px;
     height: 100%;
 }
 
-input {
+.insert {
+    padding: 6px 20px;
     border: 1px solid #b6b6b6;
     border-radius: 8px 0 0 8px;
     width: 60%;
     margin: 0;
 }
 
-button {
+.submit {
+    padding: 6px 20px;
     color: #fff;
     background-color: #025157;
     border-radius: 0 8px 8px 0;
