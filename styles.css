@@ -38,6 +38,7 @@ a {
   
 .logo {
     width: 15%;
+    vertical-align: middle;
 }
   
 .logo > img {
@@ -49,6 +50,10 @@ a {
     text-align: left;
     color: #025157;
     font-weight: 500;
+}
+
+.letra_matcha {
+    margin: 0 5px;
 }
 
 /* Declaración de acciones */
