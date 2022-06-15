@@ -18,6 +18,13 @@ body {
   
 li {
     display: inline;
+    padding: 0 25px;
+    color: #025157;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
 }
   
 .header > * {
@@ -26,6 +33,7 @@ li {
     line-height: 45px;
     height: 100%;
     vertical-align: middle;
+    font-family: sans-serif;
 }
   
 .logo {
@@ -38,16 +46,32 @@ li {
   
 .navbar {
     width: 70%;
-    text-align: center;
+    text-align: left;
     color: #025157;
     font-weight: 500;
 }
-  
+
+/* Declaración de acciones */
+
 .actions {
     width: 15%;
-    text-align: right;
+    text-align: left;
     font-size: 14px;
     font-weight: 600;
+}
+
+.actions > a {
+    padding: 0 10px;
+    text-decoration: none;
+    color: #67b54b
+}
+
+.actions > button {
+    color: #fff;
+    background-color: #67b54b;
+    padding: 12px 14px;
+    border: none;
+    border-radius: 5px;
 }
 
 /* Declaraciones del main */
