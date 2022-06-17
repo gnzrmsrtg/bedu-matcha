@@ -108,7 +108,7 @@ a {
 
 /* Esta es la parte del form "Enter email address" */
 
-.main > form {
+form {
     height: 55px;
     margin: 0; 
     padding: 0;
@@ -148,9 +148,39 @@ img.img_central {
     padding: 10px;
 }
 
-/* Acá configuramos el video */
+/* Acá configuramos las columnas de la parte del video */
 
-.video {
+.two-column {
     display: flex;
-    justify-content: center;
+    width: 70%;
+    margin: 100px auto;
+    align-items: center;
+}
+
+.two-column > article {
+    margin: 0 10% 0 3%;
+}
+
+.two-column > video {
+    margin: 0 3% 0 10%;
+}
+
+.two-column h1 {
+    color: #025157;
+    font-family: "Alegreya", serif;
+    font-size: 2rem;
+    margin-bottom: 24px;
+    font-weight: 900;
+}
+
+.two-column p {
+    color: #46484c;
+    font-family: "Slabo", serif;
+    font-size: 1rem;
+}
+
+.two-column p.gray {
+    color: #8b8b8bcc;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
 }
