@@ -56,6 +56,14 @@ a {
     margin: 0 5px;
 }
 
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+}
+
 /* Declaración de acciones */
 
 .actions {
@@ -83,7 +91,7 @@ a {
 
 .main {
     text-align: center;
-    margin-top: 100px;
+    margin-top: 250px;
 }
 
 .main > h1 {
@@ -157,12 +165,8 @@ img.img_central {
     align-items: center;
 }
 
-.two-column > article {
+.two-column > article.form {
     margin: 0 10% 0 3%;
-}
-
-.two-column > video {
-    margin: 0 3% 0 10%;
 }
 
 .two-column h1 {
@@ -183,4 +187,16 @@ img.img_central {
     color: #8b8b8bcc;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1em;
+}
+
+.two-column > article.video-img {
+    margin: 0 3% 0 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.video-img > figure {
+    display: inline-flex;
+    font-family: sans-serif;
 }
