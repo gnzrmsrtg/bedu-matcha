@@ -98,10 +98,9 @@ a {
 
 .main > h1 {
     color: #025157;
-    font-family: "Alegreya", serif;
+    font-family: 'Alegreya', serif;
     font-size: 60px;
     margin-bottom: 24px;
-    font-weight: 900;
 }
 
 .main > h4 {
@@ -164,26 +163,21 @@ img.img_central {
     display: flex;
     width: 70%;
     margin: 5em auto;
-    align-items: center;
     gap: 4em;
-}
-
-.two-column > .form {
-    margin-top: 0;
 }
 
 .two-column h1, .testimonio-section h1 {
     color: #025157;
     font-family: "Alegreya", serif;
-    font-size: 2rem;
-    margin-bottom: 24px;
+    font-size: 2.3rem;
+    margin: -25px 0 24px 0;
     font-weight: 900;
 }
 
 .two-column p, .testimonio-section p {
     color: #46484c;
-    font-family: sans-serif;
-    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.9em;
 }
 
 p.gray {
@@ -195,6 +189,7 @@ p.gray {
 .two-column > article.video-img {
     display: flex;
     flex-direction: column;
+    align-items: flex-end;
 }
 
 .video-img > figure {
@@ -246,31 +241,41 @@ p.gray {
     background-color: #a1d683;
     margin: 0;
     display: flex;
-    align-items: center;
-    justify-content: space-around;
 }
 
 .testi-container {
     display: flex;
     width: 70%;
     margin: 100px auto;
+    gap: 6em;
+    align-items: center;
 }
 
 .testi-left > img {
+    position: relative;
     margin-top: 2%;
-    max-width: 100%;
-    width: 500px;
+    max-width: 70%;
 }
 
-.testi-left {
-    margin: 0 3% 0 10%;
+.testi-left p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.1em;
+}
+
+.testi-left h1 {
+    font-size: 3em;
 }
 
 .testi-right {
-    margin: 0 10% 0 3%;
     background-color: #fff;
-    padding: 10px;
     position: relative;
+    max-width: 30%;
+    border-radius: 0.5em;
+}
+
+.testi-right img {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
 }
 
 .ind-button {
@@ -278,15 +283,16 @@ p.gray {
     color: #fff;
     background-color: #025157;
     border-radius: 8px;
-    border: none;    
+    border: none;
+    display: block;    
 }
 
 .company {
     position: relative;
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
     top: -50px;
-    right: -220px;
+    right: -190px;
     margin: 0;
     background-color: #f9da73;
     border-radius: 50%;
@@ -297,10 +303,33 @@ p.gray {
   }
 
 .company img {
-    max-width: 75%;
+    max-width: 70%;
   }
 
-.info-card {
+.card-info {
     position: relative;
-    margin-top: 500px;
+    margin-top: -100px;
+    padding: 2em;
   }
+
+p.green {
+    color: #025157;
+    font-family: "Slabo", serif;
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
+.card-info p.gray {
+    display: inline;
+}
+
+.card-info h2 {
+    font-family: "Open Sans", sans-serif;
+}
+
+.card-info .ind-button {
+    width: 100%;
+    margin: 2em 0;
+    padding: 1em;
+    font-weight: 600;
+}
