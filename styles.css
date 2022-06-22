@@ -62,6 +62,7 @@ a {
     left: 0;
     right: 0;
     background-color: #fff;
+    z-index: 1;
 }
 
 /* Declaración de acciones */
@@ -231,6 +232,7 @@ p.gray {
     margin: 0 10% 0 3%;
     background-color: #fff;
     padding: 10px;
+    position: relative;
 }
 
 .ind-button {
@@ -243,17 +245,24 @@ p.gray {
 
 .company {
     position: relative;
-    bottom: 80px;
-    left: 180px;
     width: 100px;
     height: 100px;
+    top: -50px;
+    right: -220px;
+    margin: 0;
     background-color: #f9da73;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 2;
   }
 
 .company img {
     max-width: 75%;
+  }
+
+  .info-card {
+    position: relative;
+    margin-top: 500px;
   }
