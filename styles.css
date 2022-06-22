@@ -162,12 +162,13 @@ img.img_central {
 .two-column {
     display: flex;
     width: 70%;
-    margin: 100px auto;
+    margin: 5em auto;
     align-items: center;
+    gap: 4em;
 }
 
-.two-column > article.form {
-    margin: 0 10% 0 3%;
+.two-column > .form {
+    margin-top: 0;
 }
 
 .two-column h1, .testimonio-section h1 {
@@ -191,10 +192,8 @@ p.gray {
 }
 
 .two-column > article.video-img {
-    margin: 0 3% 0 10%;
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 .video-img > figure {
@@ -300,7 +299,7 @@ p.gray {
     max-width: 75%;
   }
 
-  .info-card {
+.info-card {
     position: relative;
     margin-top: 500px;
   }
