@@ -3,11 +3,11 @@
 body {
     background-color: #fffbf7;
     box-sizing: border-box;
+    margin: 0;
 }
 
 * {
     box-sizing: inherit;
-    margin: 0;
 }
 
 /* Declaraciones del header y barra de navegación */
