@@ -166,7 +166,7 @@ img.img_central {
     gap: 4em;
 }
 
-.two-column h1, .testimonio-section h1 {
+.two-column h1, .testimonio-section h1, .how-head h1 {
     color: #025157;
     font-family: "Alegreya", serif;
     font-size: 2.3rem;
@@ -215,7 +215,7 @@ p.gray {
     font-family: "Open Sans", sans-serif;
 }
 
-.features a {
+.features a, .how-head a {
     color: #67b54b;
 }
 
@@ -257,12 +257,12 @@ p.gray {
     max-width: 70%;
 }
 
-.testi-left p {
+.testi-left p, .how-head p {
     font-family: 'Open Sans', sans-serif;
     font-size: 1.1em;
 }
 
-.testi-left h1 {
+.testi-left h1, .how-head h1 {
     font-size: 3em;
 }
 
@@ -332,4 +332,57 @@ p.green {
     margin: 2em 0;
     padding: 1em;
     font-weight: 600;
+}
+
+/* Acá va la sección How Does Matcha Work */
+
+#how-does {
+    padding: 5em;
+    text-align: center;
+}
+
+#grid-container {
+    display: grid;
+    background-color: #fffbf7;
+    height: 100%;
+    padding: 3em;
+    grid-template-areas: 
+        "how-grid1 how-grid2 how-grid3 how-grid4";
+}
+
+#grid-container article {
+    padding: 2em;
+}
+
+.how-head {
+    width: 60%;
+    margin: 100px auto;
+}
+
+.how-head button {
+    display: inline;
+}
+
+.how-head p {
+    margin-top: -0.5em;
+}
+
+.how-grid1 {
+    grid-area: how-grid1;
+    background-color: blue;
+}
+
+.how-grid2 {
+    grid-area: how-grid2;
+    background-color: gray;
+}
+
+.how-grid1 {
+    grid-area: how-grid3;
+    background-color: red;
+}
+
+.how-grid1 {
+    grid-area: how-grid4;
+    background-color: teal;
 }
