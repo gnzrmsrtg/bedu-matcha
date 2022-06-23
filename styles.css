@@ -215,7 +215,7 @@ p.gray {
     font-family: "Open Sans", sans-serif;
 }
 
-.features a, .how-head a {
+.features a, .how-head a, .how-text a {
     color: #67b54b;
 }
 
@@ -341,22 +341,9 @@ p.green {
     text-align: center;
 }
 
-#grid-container {
-    display: grid;
-    background-color: #fffbf7;
-    height: 100%;
-    padding: 3em;
-    grid-template-areas: 
-        "how-grid1 how-grid2 how-grid3 how-grid4";
-}
-
-#grid-container article {
-    padding: 2em;
-}
-
 .how-head {
     width: 60%;
-    margin: 100px auto;
+    margin: 4em auto;
 }
 
 .how-head button {
@@ -367,22 +354,50 @@ p.green {
     margin-top: -0.5em;
 }
 
-.how-grid1 {
-    grid-area: how-grid1;
-    background-color: blue;
+#grid-container {
+    display: grid;
+    background-color: #fffbf7;
+    height: 100%;
+    padding: 1em;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0.3em;
+    margin: 0 4em;
 }
 
-.how-grid2 {
-    grid-area: how-grid2;
-    background-color: gray;
+#grid-container article {
+    max-width: 90%;
+    border-radius: 0.5em;
+    background-color: #fff;
+    border: 1px solid gainsboro;
+    position: relative;
 }
 
-.how-grid1 {
-    grid-area: how-grid3;
-    background-color: red;
+#grid-container img {
+    width: 100%;
+    margin: -1em;
 }
 
-.how-grid1 {
-    grid-area: how-grid4;
-    background-color: teal;
+#grid-container i {
+    position: relative;
+    color: #b6b6b6;
+    left: .6em;
+    bottom: 7.3em;
+}
+
+.how-text {
+    padding: 1em;
+    text-align: left;
+}
+
+.how-text h3 {
+    font-family: 'Alegreya', serif;
+    font-size: 1.6em;
+    text-align: center;
+    color: #025157;
+}
+
+.how-text p, .how-text a {
+    font-family: 'Open Sans', sans-serif;
+    font-size: .8em;
+    padding: 0 0 1em 0;
 }
