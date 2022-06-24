@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+    <!-- Bootstrap -->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <!-- Mi hoja de estilos -->
     <link rel="stylesheet" href="./styles.css">
     <!-- Google Fonts -->
@@ -16,31 +19,58 @@
     <title>Matcha</title>
 </head>
 <body>
-    <!-- Barra de navegación -->
-    <section class="fixed-header">
-        <header class="header">
-            <!-- Logo Header -->
-            <a href="/" class="logo">
-                <img src="https://getmatcha.com/wp-content/uploads/2020/01/Icon-green.png" alt="logo-matcha">
-            </a>
-            <!-- Menú de navegación -->
-            <nav class="navbar">
-                <ul>
-                    <a href=""><li>Products</li></a>
-                    <a href=""><li>Templates</li></a>
-                    <a href=""><li>Pricing</li></a>
-                    <a href=""><li>Customers</li></a>
-                    <a href=""><li>Blog</li></a>
-                    <a href=""><li>Resources</li></a>
-                </ul>
-            </nav>
-            <!-- Botón de Acciones -->
-            <div class="actions">
-                <a href="/login">Sign In</a>
-                <button type="submit">Get a demo</button>
-            </div>
-        </header>
-    </section>
+    <nav class="navbar navbar-expand-lg fixed-header">
+        <div class="container-fluid">
+        <!-- Logo Header -->
+          <a class="navbar-brand logo" href="/">
+            <img src="https://getmatcha.com/wp-content/uploads/2020/01/Icon-green.png" alt="logo-matcha">
+          </a>
+        <!-- Botón responsivo -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        <!-- Navbar completo -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Products
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Blog Creator</a></li>
+                        <li><a class="dropdown-item" href="#">Content Library</a></li>
+                    </ul>    
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Templates</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Customers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Blog</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Resources
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <form class="d-flex" role="search">
+                <div class="actions">
+                    <a href="/login">Sign In</a>
+                    <button type="submit">Get a demo</button>
+                </div>
+            </form>
+          </div>
+        </div>
+      </nav>
     <!-- Sección principal -->
     <section class="main">
         <h1>Build your blog. Build your business.</h1>
@@ -214,5 +244,7 @@
             </article>
         </article>
     </section>
+    <!-- JavaScript de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
