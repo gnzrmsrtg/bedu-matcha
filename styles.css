@@ -43,16 +43,9 @@ a {
   
 .navbar {
     width: 100%;
-    text-align: left;
+    text-align: center;
     color: #025157;
     font-weight: 500;
-}
-
-.fixed-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
     background-color: #fff;
     z-index: 1;
 }
@@ -107,7 +100,7 @@ a {
 
 /* Esta es la parte del form "Enter email address" */
 
-form {
+.enter-email {
     height: 55px;
     margin: 0; 
     padding: 0;
@@ -263,9 +256,12 @@ p.gray {
     border-radius: 0.5em;
 }
 
-.testi-right img {
+.img-testi {
     width: 100%;
+    max-height: 300px;
+    height: 300px;
     border-radius: 8px 8px 0 0;
+    object-fit: cover;
 }
 
 .ind-button {
@@ -279,17 +275,17 @@ p.gray {
 
 .company {
     position: relative;
-    width: 90px;
-    height: 90px;
-    top: -50px;
-    right: -190px;
+    width: 5em;
+    height: 5em;
+    top: -2.3em;
+    right: -12em;
     margin: 0;
     background-color: #f9da73;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 2;
+    z-index: 0;
   }
 
 .company img {
@@ -298,7 +294,7 @@ p.gray {
 
 .card-info {
     position: relative;
-    margin-top: -100px;
+    margin-top: -4em;
     padding: 2em;
   }
 
@@ -397,163 +393,4 @@ p.green {
     font-family: 'Open Sans', sans-serif;
     font-size: .9em;
     align-self: flex-start;
-}
-
-
-
-/* //////////// Media queries ///////////// */
-
-/* Dispositivos móviles con vista vertical */
-
-@media (max-width: 575px) {
-    .main > h1 {
-        font-size: 30px;
-    }
-    .main {
-        margin-top: 120px;
-    }
-    .banner img {
-        max-width: 80%;
-    }
-    .two-column > .form {
-        flex-direction: column;
-    }
-    .two-column > .form > div {
-        height: 50%;
-        margin-top: 10px;
-    }
-
-    .two-column > .form > div > input {
-        width: 50%;
-    }
-    .two-column {
-        flex-direction: column;
-        max-width: 90%;
-        margin-top: 10px;
-    }
-    .video-img > video {
-        width: 100%;
-    }
-    .form > h3 {
-        font-size: 2em;
-        line-height: 1.2;
-    }
-    .features {
-        grid-template-columns: 1fr;
-        grid-gap: 1em;
-        padding: 2.5em;
-    }
-    .feature-card {
-        display: block;
-    }
-    .feature-card img {
-        width: 100%;
-        height: 200px;
-        right: 0;
-        margin-top: 1.3em;
-        
-    }
-    #grid-container i {
-        display: none;
-    }
-}
-
-/* Dispositivos pequeños en vista horizontal */
-
-@media (min-width: 576px) and (max-width: 767px) {
-    .two-column > .form {
-        flex-direction: column;
-    }
-    .two-column > .form > div {
-        height: 50%;
-        margin-top: 10px;
-    }
-
-    .two-column > .form > div > input {
-        width: 50%;
-    }
-    .two-column {
-        flex-direction: column;
-        max-width: 90%;
-        margin-top: 10px;
-    }
-    .video-img > video {
-        width: 100%;
-    }
-    .form > h3 {
-        font-size: 2em;
-        line-height: 1.2;
-    }
-    .features {
-        grid-template-columns: 1fr;
-        grid-gap: 1em;
-        padding: 2.5em;
-    }
-    .feature-card {
-        display: block;
-    }
-    .feature-card img {
-        width: 100%;
-        height: 200px;
-        right: 0;
-        margin-top: 1.3em;
-        
-    }
-    #grid-container i {
-        display: none;
-    }
-}
-
-/* Dispositivos medianos (tablets) */
-
-@media (min-width: 768px) and (max-width: 991px) {
-    .two-column > .form {
-        flex-direction: column;
-    }
-    .two-column > .form > div {
-        height: 50%;
-        margin-top: 10px;
-    }
-
-    .two-column > .form > div > input {
-        width: 50%;
-    }
-    .two-column {
-        flex-direction: column;
-        max-width: 90%;
-        margin-top: 10px;
-    }
-    .video-img > video {
-        width: 100%;
-    }
-    .form > h3 {
-        font-size: 2em;
-        line-height: 1.2;
-    }
-    .feature-card {
-        display: block;
-    }
-    .feature-card img {
-        width: 100%;
-        height: 200px;
-        right: 0;
-        margin-top: 1.3em;
-        
-    }
-    #grid-container i {
-        display: none;
-    }
-
-}
-
-/* Dispositivos grandes */
-
-@media (min-width: 992px) and (max-width: 1199px) {
-    
-}
-
-/* Dispositivos extragrandes */
-
-@media (min-width: 1200px) {
-
 }
