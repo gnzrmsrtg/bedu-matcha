@@ -5,10 +5,14 @@
 $dark-green-title: #025157;
 $dark-green-text: #135359;
 $white: #ffffff;
+$card-category-color: #67b54b;
+$card-read-time-color: #979797;
+$card-text-color: #4a4a4a;
 
 // Fuentes
 
 $font-title: "Alegreya", serif;
+$font-Open: 'Open Sans', sans-serif;
 
 %base-title {
     font-family: $font-title;
@@ -19,3 +23,16 @@ $font-title: "Alegreya", serif;
     background-color: #025157;
     color: #ffffff;
 } 
+
+%author-img {
+    border-radius: 50%;
+    width: 2em;
+    height: 2em;
+}
+
+%author-info {
+    display: flex;
+    align-content: center;
+    gap: 0.3em;
+    font-size: 0.9em;
+}

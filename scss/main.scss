@@ -15,6 +15,7 @@
 
         .process {
             margin-bottom: 25px;
+            display: flex;
 
             & > div {
                 & > h3 {
@@ -33,7 +34,6 @@
                 height: 60px;
                 margin-right: 10px;
                 text-align: center;
-
             }
             img {
                 height: 100%;
@@ -48,5 +48,30 @@
         margin-bottom: 15px;
         border-radius: 8px;
         @extend %button-style;
+    }
+
+    .card {
+        color: $card-text-color;
+        .metadata {
+            font-size: .8em;
+            font-family: $font-Open;
+        }
+        .category {
+            color: $card-category-color;
+        }
+        .read-time {
+            color: $card-read-time-color;
+        }
+        a {
+            text-decoration: underline;
+        }
+        .author {
+            @extend %author-info;
+            font-family: $font-Open;
+            
+            img {
+                @extend %author-img;
+            }
+        }
     }
 }
