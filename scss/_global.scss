@@ -1,0 +1,21 @@
+// _global.scss
+
+// Colores globales
+
+$dark-green-title: #025157;
+$dark-green-text: #135359;
+$white: #ffffff;
+
+// Fuentes
+
+$font-title: "Alegreya", serif;
+
+%base-title {
+    font-family: $font-title;
+    color: $dark-green-text;
+}
+
+%button-style {
+    background-color: #025157;
+    color: #ffffff;
+} 
