@@ -15,8 +15,6 @@
 }
 
 .blog .card .author {
-  display: flex;
-  align-content: center;
   gap: 0.3em;
   font-size: 0.9em;
 }

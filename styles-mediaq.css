@@ -109,6 +109,9 @@
         width: 100%;
         margin: 0;
     }
+    .card {
+        margin-top: 1em;
+    }
 }
 
 /* Dispositivos pequeños en vista horizontal */
