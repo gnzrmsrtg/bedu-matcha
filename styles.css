@@ -129,6 +129,10 @@ input, button {
     border: none;
 }
 
+.texto-boton:hover {
+    background-color: #67b54b;
+}
+
 /* Estas son las imágenes del main */
 
 .banner img {
@@ -215,6 +219,16 @@ p.gray {
     right: -3rem;
     filter: grayscale(0.7);
     object-fit: cover;
+}
+
+.feature-card img:hover {
+    animation-name: imgGrow;
+    animation-duration: 1s;
+}
+
+@keyframes imgGrow {
+    0% {}
+    50% {width: 205px; height: 205px;}
 }
 
 
