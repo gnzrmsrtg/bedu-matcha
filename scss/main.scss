@@ -75,3 +75,88 @@
         }
     }
 }
+
+.try-matcha1 {
+    background-color: #96d178;
+    padding: 4em;
+    text-align: center;
+
+    h1 {
+        color: $dark-green-title;
+        font-family: $font-title;
+        font-size: 3.7em;
+    }
+    form {
+        margin: 1em;
+    }
+    p {
+        color: $white;
+    } 
+}
+
+.try-matcha2 {
+    background-color: $white;
+    padding: 4em;
+
+    .container {
+        background-color: $dark-green-title;
+        border-radius: 10px;
+        padding: 4em;
+    }
+    h2 {
+        color: $white;
+        font-family: $font-title;
+        font-size: 2.5em;
+        margin-right: 6em;
+    }
+    .learn {
+        color: $white;
+        font-size: 1.3em;
+        margin: 1em 0;
+        & a {
+            color: $try-matcha-light-green;
+        }
+    }
+    button {
+        background-color: $try-matcha-light-green;
+    }
+    p {
+        color: $white;
+        font-size: 1em;
+        margin: 1em 12em 0 0;
+    }
+}
+
+@media (max-width: 575px) {
+    .try-matcha1, .try-matcha2 {
+        padding: 2em;
+        & form {
+            font-size: .8em;
+            width: 100%;
+            margin: 1em auto;
+            padding: 0;
+            display: flex;
+        }
+        & input, button {
+            width: 50%;
+        }
+        h1 {
+            font-size: 2.5em;
+            padding: 0;
+            margin: 0; 
+        }
+    }
+    .try-matcha2 {
+        .container {
+            padding: 2em;
+        }
+        h2 {
+            font-size: 2em;
+            margin: 0;
+            padding: 0;
+        }
+        p {
+            margin: 0;
+        }
+    }
+}
