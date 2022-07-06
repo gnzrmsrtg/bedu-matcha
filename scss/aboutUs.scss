@@ -50,7 +50,7 @@
     justify-content: center;
     margin-top: 2em;
     & img {
-        rotate: 270deg;
+        rotate: -90deg;
         width: 5em;
         position: relative;
         animation-name: flecha-abajo, lados;
@@ -68,8 +68,8 @@
     }
 
     @keyframes lados {
-        from {left: -15em;}
-        to {left: 15em;}
+        from {left: -15em; rotate: -45deg;}
+        to {left: 15em; rotate: -135deg}
     }
 
 }
