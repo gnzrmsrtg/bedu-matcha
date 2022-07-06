@@ -27,4 +27,13 @@
 .top-features h3 {
     font-size: 1.4em;
     margin: 1em auto;
+    text-shadow: #025157 1px 1px 2px;
+    transition: color .3s ease-in-out;
+    transition: transform 1s;
+
+    &:hover {
+        color: #67b54b;
+        cursor: pointer;
+        transform: scale(1.2,1.2);
+    }
 }
