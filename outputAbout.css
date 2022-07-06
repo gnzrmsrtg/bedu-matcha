@@ -1,0 +1,30 @@
+.principal {
+  text-align: center;
+  margin-top: 7em;
+}
+
+.principal h1 {
+  color: #025157;
+  font-family: Arial;
+}
+
+.principal p {
+  color: #000;
+}
+
+.top-features {
+  padding: 5em;
+  margin: 1em auto;
+  text-align: center;
+}
+
+.top-features img {
+  max-width: 400px;
+}
+
+.top-features h3 {
+  font-size: 1.4em;
+  margin: 1em auto;
+}
+
+/*# sourceMappingURL=outputAbout.css.map */
