@@ -162,8 +162,9 @@ input {
 }
 
 .uno span {
-    transition: .3s ease all;
+    transition: .3s ease-in-out all;
     position: absolute;
+    left: 2.6em;
 }
 
 .uno .icono {
