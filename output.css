@@ -57,6 +57,10 @@
   padding: 12px;
   margin-bottom: 15px;
   border-radius: 8px;
+  transition: .3s ease-in-out all;
+}
+.blog button:hover{
+  background-color: #67b54b;
 }
 .blog .card {
   color: #4a4a4a;
